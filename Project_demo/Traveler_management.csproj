@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3B69A552-5170-4066-871E-AF2C3469B500}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Project_demo</RootNamespace>
+    <AssemblyName>Project_demo</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\..\..\Downloads\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>F:\Fall-22\Object Oriented Programming 2 [H]\Projects\Hotel Management\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="All user control\UC_addGuide.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="All user control\UC_addGuide.Designer.cs">
+      <DependentUpon>UC_addGuide.cs</DependentUpon>
+    </Compile>
+    <Compile Include="All user control\UC_addHotel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="All user control\UC_addHotel.Designer.cs">
+      <DependentUpon>UC_addHotel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="All user control\UC_addRooms.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="All user control\UC_addRooms.Designer.cs">
+      <DependentUpon>UC_addRooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="All user control\UC_addTent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="All user control\UC_addTent.Designer.cs">
+      <DependentUpon>UC_addTent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="All user control\UC_adminRegistration.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="All user control\UC_adminRegistration.Designer.cs">
+      <DependentUpon>UC_adminRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="All user control\UC_customerDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="All user control\UC_customerDetails.Designer.cs">
+      <DependentUpon>UC_customerDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="All user control\UC_superAdminDashBoard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="All user control\UC_superAdminDashBoard.Designer.cs">
+      <DependentUpon>UC_superAdminDashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="All user control\UC_userDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="All user control\UC_userDetails.Designer.cs">
+      <DependentUpon>UC_userDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="All user control\UC_addVehicle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="All user control\UC_addVehicle.Designer.cs">
+      <DependentUpon>UC_addVehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Booking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Booking.Designer.cs">
+      <DependentUpon>Booking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer User Control\Price.cs" />
+    <Compile Include="Customer User Control\UC_guideBooking.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Customer User Control\UC_guideBooking.Designer.cs">
+      <DependentUpon>UC_guideBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer User Control\UC_hotelBooking.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Customer User Control\UC_hotelBooking.Designer.cs">
+      <DependentUpon>UC_hotelBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer User Control\UC_searchingDestination.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Customer User Control\UC_searchingDestination.Designer.cs">
+      <DependentUpon>UC_searchingDestination.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer User Control\UC_tentBooking.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Customer User Control\UC_tentBooking.Designer.cs">
+      <DependentUpon>UC_tentBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer User Control\UC_vehicleBooking.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Customer User Control\UC_vehicleBooking.Designer.cs">
+      <DependentUpon>UC_vehicleBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer User Control\UC_customerProfileUpdate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Customer User Control\UC_customerProfileUpdate.Designer.cs">
+      <DependentUpon>UC_customerProfileUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_Portal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_Portal.Designer.cs">
+      <DependentUpon>Customer_Portal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="function.cs" />
+    <Compile Include="MakePayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MakePayment.Designer.cs">
+      <DependentUpon>MakePayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment_details.Designer.cs">
+      <DependentUpon>Payment_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment_verification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment_verification.Designer.cs">
+      <DependentUpon>Payment_verification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuperAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>SuperAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrationForm.Designer.cs">
+      <DependentUpon>RegistrationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reset_Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reset_Password.Designer.cs">
+      <DependentUpon>Reset_Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sendCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sendCode.Designer.cs">
+      <DependentUpon>sendCode.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="All user control\UC_addGuide.resx">
+      <DependentUpon>UC_addGuide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="All user control\UC_addHotel.resx">
+      <DependentUpon>UC_addHotel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="All user control\UC_addRooms.resx">
+      <DependentUpon>UC_addRooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="All user control\UC_addTent.resx">
+      <DependentUpon>UC_addTent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="All user control\UC_adminRegistration.resx">
+      <DependentUpon>UC_adminRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="All user control\UC_customerDetails.resx">
+      <DependentUpon>UC_customerDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="All user control\UC_superAdminDashBoard.resx">
+      <DependentUpon>UC_superAdminDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="All user control\UC_userDetails.resx">
+      <DependentUpon>UC_userDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="All user control\UC_addVehicle.resx">
+      <DependentUpon>UC_addVehicle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Booking.resx">
+      <DependentUpon>Booking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer User Control\UC_guideBooking.resx">
+      <DependentUpon>UC_guideBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer User Control\UC_hotelBooking.resx">
+      <DependentUpon>UC_hotelBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer User Control\UC_searchingDestination.resx">
+      <DependentUpon>UC_searchingDestination.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer User Control\UC_tentBooking.resx">
+      <DependentUpon>UC_tentBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer User Control\UC_vehicleBooking.resx">
+      <DependentUpon>UC_vehicleBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer User Control\UC_customerProfileUpdate.resx">
+      <DependentUpon>UC_customerProfileUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_Portal.resx">
+      <DependentUpon>Customer_Portal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MakePayment.resx">
+      <DependentUpon>MakePayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment_details.resx">
+      <DependentUpon>Payment_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment_verification.resx">
+      <DependentUpon>Payment_verification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RegistrationForm.resx">
+      <DependentUpon>RegistrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reset_Password.resx">
+      <DependentUpon>Reset_Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sendCode.resx">
+      <DependentUpon>sendCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuperAdmin.resx">
+      <DependentUpon>SuperAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
